@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="naruto">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boyina Sai Aditya | Data Analyst & Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Boyina Sai Aditya - Computer Science Student specializing in Data Analysis, Python, SQL, and Web Development.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Outfit:wght@300;400;600;700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Particle VFX Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#home" class="logo">
+                <span class="logo-badge" id="logo-badge">🍃</span> BSA<span>.dev</span>
+            </a>
+
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <!-- Theme Switcher Button -->
+                <button class="theme-switch-btn" id="theme-toggle-btn" aria-label="Toggle Theme">
+                    <span class="theme-icon" id="theme-icon">🍃</span>
+                    <span id="theme-text">Hidden Leaf</span>
+                </button>
+
+                <button class="menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text fade-in">
+                    <div class="anime-tag" id="anime-tag">🍃 Data Analyst & Developer</div>
+                    <h1>Boyina Sai Aditya</h1>
+                    <div class="subtitle-wrapper">
+                        <span id="typing-subtitle" class="typing-text"></span>
+                    </div>
+                    <p class="hero-bio">
+                        Computer Science student (2024–2028) at <strong>ADYPU</strong> passionate about
+                        <strong>Data Analysis</strong>, database management, and building interactive web solutions driven by data insights.
+                    </p>
+
+                    <div class="cta-group">
+                        <a href="#projects" class="btn-primary">
+                            <span>Explore Portfolio & Work</span> 📊
+                        </a>
+                        <a href="#contact" class="btn-outline">
+                            <span>Get In Touch</span> 📩
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Visual: Avatar Frame & CLI Terminal -->
+                <div class="hero-visual fade-in">
+                    <div class="profile-avatar-wrapper">
+                        <div class="aura-ring"></div>
+                        <img src="profile.png" alt="Boyina Sai Aditya Profile" id="profile-img" onerror="this.onerror=null; this.src='Aditya.jpeg';">
+                    </div>
+
+                    <!-- Interactive Developer CLI Terminal -->
+                    <div class="terminal-card">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <span class="terminal-title" id="terminal-title">saiadityaboyina@analyst-terminal</span>
+                        </div>
+                        <div class="terminal-body" id="terminal-output">
+Welcome to Boyina Sai Aditya's Terminal! 📊
+Type 'help' or click quick commands below.
+                        </div>
+                        <div class="terminal-input-line">
+                            <span id="terminal-prompt">saiaditya@konoha:~$</span>
+                            <input type="text" id="terminal-input" placeholder="Type a command..." autocomplete="off">
+                        </div>
+                        <div class="terminal-quick-cmds">
+                            <button class="cmd-btn" data-cmd="help">help</button>
+                            <button class="cmd-btn" data-cmd="about">about</button>
+                            <button class="cmd-btn" data-cmd="skills">skills</button>
+                            <button class="cmd-btn" data-cmd="languages">languages</button>
+                            <button class="cmd-btn" data-cmd="projects">projects</button>
+                            <button class="cmd-btn" data-cmd="socials">socials</button>
+                            <button class="cmd-btn" data-cmd="mode">mode</button>
+                            <button class="cmd-btn" data-cmd="clear">clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title fade-in"><span>01.</span> About Me</h2>
+                <div class="about-grid">
+                    <div class="about-card fade-in">
+                        <p>
+                            Hello! I'm <strong>Boyina Sai Aditya</strong>, a computer science student with a passion for 
+                            <strong>Data Analysis</strong>, extracting actionable insights from data, and building clean data-driven software solutions.
+                        </p>
+                        <p>
+                            Currently pursuing my B.Tech in CS (2024–2028) at ADYPU, I specialize in analyzing datasets, working with 
+                            relational databases, and creating responsive web interfaces.
+                        </p>
+                        <p>
+                            I enjoy solving complex analytical problems, building data models, and continuously learning new analytics & visualization tools.
+                        </p>
+
+                        <!-- Languages Known Subsection -->
+                        <div class="languages-section">
+                            <h4>🗣️ Languages Known:</h4>
+                            <div class="language-tags">
+                                <span class="lang-pill"><strong>Telugu</strong> (Fluent)</span>
+                                <span class="lang-pill"><strong>English</strong> (Proficient)</span>
+                                <span class="lang-pill"><strong>Hindi</strong> (Basics)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stats-badges fade-in">
+                        <div class="stat-box">
+                            <div class="stat-number">2024–28</div>
+                            <div class="stat-label">ADYPU B.Tech CS</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">Data</div>
+                            <div class="stat-label">Analysis Focus</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Languages Known</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Dedication</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in"><span>02.</span> Technical Skills & Tools</h2>
+
+                <div class="skills-grid">
+                    <!-- Skill Card 1: Data Analysis -->
+                    <div class="skill-scroll-card fade-in">
+                        <div class="skill-card-header">
+                            <span class="skill-icon">📊</span>
+                            <h3>Data Analysis & Analytics</h3>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>Python</li>
+                            <li>Excel (Advanced Functions & Data Formatting)</li>
+                            <li>Data Wrangling</li>
+                            <li>Data Visualization</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card 2: Databases -->
+                    <div class="skill-scroll-card fade-in">
+                        <div class="skill-card-header">
+                            <span class="skill-icon">🗄️</span>
+                            <h3>Databases & SQL</h3>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>DBMS (Database Management Systems)</li>
+                            <li>MySQL</li>
+                            <li>SQL Queries & Joins</li>
+                            <li>Relational Data Modeling</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card 3: Web & Programming -->
+                    <div class="skill-scroll-card fade-in">
+                        <div class="skill-card-header">
+                            <span class="skill-icon">💻</span>
+                            <h3>Web & Core Programming</h3>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Java (Basics)</li>
+                            <li>Responsive Web Layouts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title fade-in"><span>03.</span> Featured Project</h2>
+
+                <div class="projects-grid single-project">
+                    <div class="project-card featured-single fade-in">
+                        <div class="project-header">
+                            <div class="folder-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                            </div>
+                            <span class="project-badge">Featured Portfolio</span>
+                        </div>
+                        <h3 class="project-title">Interactive Anime Data Analyst Portfolio</h3>
+                        <p class="project-desc">
+                            A custom, high-performance personal developer portfolio built for Boyina Sai Aditya featuring dual anime themes (Naruto x One Piece), real-time background particle physics canvas, interactive developer CLI terminal, and responsive glassmorphism UI showcasing Data Analysis skills.
+                        </p>
+                        <ul class="project-tech-pills">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Canvas API</li>
+                            <li>Interactive CLI</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Live Social & Platform Profiles Grid -->
+                <div class="platforms-grid fade-in">
+                    <a href="https://github.com/saiaditya05" target="_blank" class="platform-card" title="GitHub Profile">
+                        <div class="platform-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </div>
+                        <div class="platform-info">
+                            <h4>GitHub</h4>
+                            <span>@saiaditya05</span>
+                        </div>
+                    </a>
+
+                    <a href="https://leetcode.com/u/saiaditya_05/" target="_blank" class="platform-card" title="LeetCode Profile">
+                        <div class="platform-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125 5.13 5.527 5.527 0 0 0 2.662 2.815l.158.08a5.112 5.112 0 0 0 2.004.522H9.81a5.018 5.018 0 0 0 4.17-2.115l.16-.224 4.11-5.811c.158-.224.19-.53.091-.789a.694.694 0 0 0-.319-.345l-3.23-1.63a.627.627 0 0 0-.82.16l-3.69 5.207a1.045 1.045 0 0 1-.869.466h-.22a1.026 1.026 0 0 1-.87-.456l-.16-.21a2.827 2.827 0 0 1-.505-1.574 2.84 2.84 0 0 1 .533-1.6l4.2-4.515 2.502-2.693a.925.925 0 0 1 .655-.262h4.5a.696.696 0 0 0 .584-.308.7.7 0 0 0-.01-.715L14.3.567A1.37 1.37 0 0 0 13.483 0zm4.55 17.584c-.4.004-.77.172-1.05.47-.46.495-.45 1.25.02 1.73l.02.02.04.04c.26.25.62.4.99.4h6.09a2.03 2.03 0 0 0 2.02-2.03 1.9 1.9 0 0 0-.58-1.35l-.01-.01-.04-.04a1.86 1.86 0 0 0-1.3-.5h-6.2z"/>
+                            </svg>
+                        </div>
+                        <div class="platform-info">
+                            <h4>LeetCode</h4>
+                            <span>@saiaditya_05</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.hackerrank.com/profile/saiadityaboyina" target="_blank" class="platform-card" title="HackerRank Profile">
+                        <div class="platform-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.012 24c-.266 0-.535-.07-.771-.205L2.17 18.552a1.59 1.59 0 0 1-.8-1.35V6.786c0-.554.298-1.07.784-1.35l9.096-5.234a1.6 1.6 0 0 1 1.572 0L21.905 5.43A1.56 1.56 0 0 1 22.7 6.78v10.421c0 .56-.3 1.074-.795 1.348l-9.102 5.244c-.25.137-.534.208-.791.208zM12.01 1.565c-.085 0-.17.022-.245.065L2.68 6.855A.063.063 0 0 0 2.65 6.91v10.42a.066.066 0 0 0 .034.053l8.905 5.378a.08.08 0 0 0 .079 0l9.088-5.235a.065.065 0 0 0 .035-.054V6.9v-.004c0-.022-.012-.045-.034-.057L11.666 1.625a.077.077 0 0 0-.045-.06.7.7 0 0 0-.256-.056v-.004zm5.54 13.593v-6.315H15.11v1.65H8.92V8.842H6.47v6.315h2.44V13.51h6.195v1.65h2.44v-.002z"/>
+                            </svg>
+                        </div>
+                        <div class="platform-info">
+                            <h4>HackerRank</h4>
+                            <span>@saiadityaboyina</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/sai-aditya-boyina-/" target="_blank" class="platform-card" title="LinkedIn Profile">
+                        <div class="platform-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </div>
+                        <div class="platform-info">
+                            <h4>LinkedIn</h4>
+                            <span>Boyina Sai Aditya</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container contact-content fade-in">
+                <h2>Let's Connect & Collaborate! 📡</h2>
+                <p>
+                    I'm actively seeking Data Analyst internships, Data Analytics projects, and hackathon opportunities. 
+                    Feel free to reach out via email or connect on LinkedIn!
+                </p>
+                <a href="mailto:saiadityaboyina246@gmail.com" class="btn-primary">
+                    <span>Say Hello</span> 📩
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Designed & Developed by <strong>Boyina Sai Aditya</strong> &copy; 2026 | Data Analyst Portfolio</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
